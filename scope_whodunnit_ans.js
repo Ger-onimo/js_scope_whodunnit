@@ -245,3 +245,34 @@
 // ### Extensions
 //
 // Make up your own episode!
+
+let weaponOne = 'rope';
+let weaponTwo = 'banana skin';
+let weaponThree = 'piano';
+
+const declareAllWeapons = function() {
+  let weaponOne = 'anvil';
+  return `The suspects are ${weaponOne}, ${weaponTwo}, ${weaponThree}.`;
+};
+
+const weapons = declareAllWeapons();
+console.log(weapons);
+
+///////
+const scenario = {
+  murderer: 'Miss Scarlet',
+  room: 'Library',
+  weapon: 'Rope'
+};
+
+const changeWeapon = function(newWeapon) {
+  scenario.weapon = newWeapon;
+}
+
+const revealMurder = function() {
+  return `The murderer is ${scenario.murderer}, in the ${scenario.room}, with a ${scenario.weapon}`;
+}
+
+changeWeapon('banana skin');
+const verdict = revealMurder();
+console.log(verdict);
