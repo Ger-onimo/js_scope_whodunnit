@@ -240,7 +240,9 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-   // VERDICT:
+   // VERDICT: Professor Plum
+   // declare murdere is being called outside the if statement block
+   // so calls the let outside the block - the global variable
 
 // ### Extensions
 //
