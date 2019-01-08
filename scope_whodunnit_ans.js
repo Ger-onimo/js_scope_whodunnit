@@ -173,7 +173,8 @@
 
    // TODO
    // VERDICT:
-   // got a bit lost in this one
+   // got a bit lost in this one - Mr Green, because the let murderer is the global
+   // variable declared outside the block. murderer inside th block isn't declared as let or const.
 
 // EPISODE 8
 
@@ -219,7 +220,7 @@
 
    // VERDICT: Candle Stick
    // call on changeScenario reassigns murderer to Mrs Peacock.
-    //  the verdict calls declareWeapon. The first if questios if the murderer is
+    //  the verdict calls declareWeapon. The first if questions if the murderer is
     // Colonel Mustard as it is not the next if asks if the murderer equals murderer
     // the murderer is Mrs Peacock so the weapon is now reassigned as 'candle stick'
 
@@ -241,40 +242,40 @@
 // console.log(verdict);
 
    // VERDICT: Professor Plum
-   // declare murdere is being called outside the if statement block
+   // declare murderer is being called outside the if statement block
    // so calls the let outside the block - the global variable
 
 // ### Extensions
 //
 // Make up your own episode!
 
-let weaponOne = 'rope';
-let weaponTwo = 'banana skin';
-let weaponThree = 'piano';
-
-const declareAllWeapons = function() {
-  let weaponOne = 'anvil';
-  return `The suspects are ${weaponOne}, ${weaponTwo}, ${weaponThree}.`;
-};
-
-const weapons = declareAllWeapons();
-console.log(weapons);
-
-///////
-const scenario = {
-  murderer: 'Miss Scarlet',
-  room: 'Library',
-  weapon: 'Rope'
-};
-
-const changeWeapon = function(newWeapon) {
-  scenario.weapon = newWeapon;
-}
-
-const revealMurder = function() {
-  return `The murderer is ${scenario.murderer}, in the ${scenario.room}, with a ${scenario.weapon}`;
-}
-
-changeWeapon('banana skin');
-const verdict = revealMurder();
-console.log(verdict);
+// let weaponOne = 'rope';
+// let weaponTwo = 'banana skin';
+// let weaponThree = 'piano';
+//
+// const declareAllWeapons = function() {
+//   let weaponOne = 'anvil';
+//   return `The suspects are ${weaponOne}, ${weaponTwo}, ${weaponThree}.`;
+// };
+//
+// const weapons = declareAllWeapons();
+// console.log(weapons);
+//
+// ///////
+// const scenario = {
+//   murderer: 'Miss Scarlet',
+//   room: 'Library',
+//   weapon: 'Rope'
+// };
+//
+// const changeWeapon = function(newWeapon) {
+//   scenario.weapon = newWeapon;
+// }
+//
+// const revealMurder = function() {
+//   return `The murderer is ${scenario.murderer}, in the ${scenario.room}, with a ${scenario.weapon}`;
+// }
+//
+// changeWeapon('banana skin');
+// const verdict = revealMurder();
+// console.log(verdict);
